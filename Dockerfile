@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM ubuntu:xenial
 MAINTAINER oliver@weichhold.com
 
 ADD https://github.com/just-containers/s6-overlay/releases/download/v1.17.2.0/s6-overlay-amd64.tar.gz \
