@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM debian:stretch
 MAINTAINER oliver@weichhold.com
 
 ADD https://github.com/just-containers/s6-overlay/releases/download/v1.17.2.0/s6-overlay-amd64.tar.gz \
@@ -9,7 +9,6 @@ RUN tar xzf /tmp/s6-overlay-amd64.tar.gz -C / && \
     rm -rf /usr/share/man/* /usr/share/groff/* /usr/share/info/* /var/cache/man/* /tmp/* /var/lib/apt/lists/*
 
 EXPOSE 16101
-ENV ALGO scrypt
 
 ENTRYPOINT ["/init"]
 VOLUME ["/data"]
