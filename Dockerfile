@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM debian:10-slim
 
 ADD https://github.com/digibyte/digibyte/releases/download/v7.17.2/digibyte-7.17.2-x86_64-linux-gnu.tar.gz /tmp/
 
